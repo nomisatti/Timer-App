@@ -7,7 +7,6 @@ import TimerComponent from './Components/timerComponent/TimerComponent'
 describe('Render App Component' , ()=>{
    const appComponent = mount(<App/>);
 
-   console.log(appComponent.debug())
    it('Should Render a Div' , ()=>{
    
     expect(appComponent.find('div').length).toBeGreaterThanOrEqual(1);
