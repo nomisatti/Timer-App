@@ -10,7 +10,7 @@ script:
 deploy:
   provider: surge
   skip_cleanup: true
-  domain: timer-app-ns.surge.sh
+  domain: necessary-death.surge.sh
   project: ./build/
 
 on: 
