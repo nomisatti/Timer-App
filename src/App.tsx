@@ -3,29 +3,21 @@ import './App.css';
 import TimerComponent from './Components/timerComponent/TimerComponent'
 import BtnComponent from './Components/buttonsComponent/BtnComponent'
 import Header from './Components/header/Header'
-import firebase from './firebase'
+
 
 function App() {
-
-  const messaging  = firebase.messaging();
-  messaging.requestPermission().then(() => {
-    return messaging.getToken()
-  }).then((token) =>{
-    console.log('Token : ' ,token);
-  })
-
 
   const [time, setTime] = useState({ ms: 0, s: 0, m: 0, h: 0 })
   const [timerInterval, setTimerInterval] = useState({});
   const [timerStatus, setTimerStatus] = useState(0);
 
   const startTimer = () => {
-    if(timerStatus !==1 ) {
+    if (timerStatus !== 1) {
       runTimer();
       setTimerStatus(1)
       setTimerInterval(setInterval(runTimer, 10));
     }
-    
+
 
   }
 
@@ -69,11 +61,11 @@ function App() {
 
   }
 
+
   return (
     <div>
-    
       <div className="main-section">
-      <Header />
+        <Header />
         <div className="clock-holder">
           <div className="stopwatch">
             <TimerComponent time={time} />

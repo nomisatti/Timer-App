@@ -1,6 +1,7 @@
 import React from 'react';
 
 function TimerComponent(props:any) {
+
   return (
     <div >
       <span>{(props.time.h >0 ? props.time.h : "00")}</span> <strong className="timerDots">:</strong>
