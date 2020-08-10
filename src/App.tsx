@@ -11,7 +11,7 @@ function App() {
   const [timerStatus, setTimerStatus] = useState(0);
 
   const startTimer = () => {
-    if(timerStatus !=1 ) {
+    if(timerStatus !==1 ) {
       runTimer();
       setTimerStatus(1)
       setTimerInterval(setInterval(runTimer, 10));

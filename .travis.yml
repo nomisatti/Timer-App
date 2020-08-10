@@ -15,5 +15,3 @@ deploy:
 
 on: 
   branch: master
-
-
