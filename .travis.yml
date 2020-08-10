@@ -7,10 +7,14 @@ script:
   - npm test
   - npm run build
 
+after_success:
+  - npm install -g firebase-tools
+  - firebase deploy --token "$FIREBASE_TOKEN"
+
 deploy:
-  provider: surge
+  provider: firebase
   skip_cleanup: true
-  domain: timer-app-ns.surge.sh
+  domain: timer-app-b1698.firebaseapp.com/
   project: ./build/
 
 on: 
