@@ -1,5 +1,5 @@
 language: node_js
-node_js:  
+node_js:
   - "stable"
 
 script:
@@ -13,5 +13,7 @@ deploy:
   domain: timer-app-ns.surge.sh
   project: ./build/
 
-on :
-   branch: master
+on: 
+  branch: master
+
+
