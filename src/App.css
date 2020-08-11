@@ -28,6 +28,12 @@ body {
   color:#C3493D;
 }
 
+@media screen and (max-width : 600px) {
+  .LogoText{
+    font-size: 40px;
+  }
+}
+
 @media screen and (min-width : 600px) {
   .headerSection{
     margin: 0px 100px;
