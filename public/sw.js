@@ -13,7 +13,7 @@ this.addEventListener("install", (event) => {
                 "/static/js/main.d6b663ed.chunk.js",
                 "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css",
                 "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/fonts/fontawesome-webfont.woff2?v=4.6.1",
-                "https://timer-app-b1698.web.app/static/css/main.2ba7ed61.chunk.css"
+                "https://timer-app-b1698.web.app/static/css/main.2ba7ed61.chunk.css",
                 "/main.708d841cbc4641fc9ee6.hot-update.js",
                 "/static/media/timerLogo.5c999e8d.png",
                 "/static/media/timerImage.5de9b5ad.jpg",
